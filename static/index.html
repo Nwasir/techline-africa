@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techline Africa</title>
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+  <!-- LOADING ANIMATION -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky-header fade-section">
+    <div class="container nav-container">
+
+      <div class="brand">
+        <div class="logo">TA</div>
+        <h2>Techline Africa</h2>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <div class="hamburger" id="hamburger">☰</div>
+
+      <!-- Navigation -->
+      <nav id="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero container fade-section">
+    <div class="hero-inner">
+      <h1>Empowering Africa With Smart Technology</h1>
+      <p class="lead">
+        Delivering Digital Solutions in Web Development, Data, Automation & AI.
+      </p>
+      <a class="cta" href="#contact">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container fade-section">
+    <h2>About Us</h2>
+    <p>
+      Techline Africa empowers individuals and businesses with innovative,
+      affordable, and ethical technology solutions.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container services fade-section">
+    <h2>Our Services</h2>
+    <ul>
+      <li class="service">Data Entry & Virtual Assistance</li>
+      <li class="service">Web Design & Development</li>
+      <li class="service">AI & Automation (Emerging)</li>
+      <li class="service">Social Media Management</li>
+      <li class="service">Training & Mentorship</li>
+      <li class="service">Recruitment Network (Future)</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container fade-section">
+    <h2>Projects</h2>
+
+    <div class="projects-slider-wrapper">
+      <button class="slide-btn left" id="slideLeft">&#10094;</button>
+
+      <div class="projects-slider" id="projectsSlider">
+        
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <a href="https://energy-analysis.streamlit.app/" target="_blank">
+            <img src="/static/images/energy-weather-analysis.png" alt="Energy Dashboard">
+          </a>
+          <h3>
+            <a href="https://energy-analysis.streamlit.app/" target="_blank">Energy & Weather Data Dashboard</a>
+          </h3>
+          <p>Pipeline using NOAA + EIA APIs (Python).</p>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <a href="https://customers-churn-analysis.streamlit.app/" target="_blank">
+            <img src="/static/images/churn-analysis.png" alt="Churn Prediction">
+          </a>
+          <h3>
+            <a href="https://customers-churn-analysis.streamlit.app/" target="_blank">Customer Churn Prediction</a>
+          </h3>
+          <p>Machine Learning project using Scikit-Learn.</p>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <a href="https://placeholder-link-3.com" target="_blank">
+            <img src="/static/images/project3-placeholder.jpg" alt="Inventory System">
+          </a>
+          <h3>
+            <a href="https://placeholder-link-3.com" target="_blank">Inventory Management System</a>
+          </h3>
+          <p>Full-stack CRUD + Authentication System.</p>
+        </div>
+
+        <!-- PROJECT 4 (COMING SOON) -->
+        <div class="project-card">
+          <a href="#" onclick="return false;">
+            <img src="/static/images/project-placeholder.jpg" alt="Coming Soon">
+          </a>
+          <h3>Coming Soon</h3>
+          <p>New exciting project in development...</p>
+        </div>
+
+      </div>
+
+      <button class="slide-btn right" id="slideRight">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="container contact-form fade-section">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+
+    <p class="small muted" id="formMessage">
+      You can also reach us on 
+      <a href="https://wa.me/+2349064695956" target="_blank" rel="noopener noreferrer">
+        <!-- WhatsApp SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#25D366" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;">
+          <path d="M20.52 3.48a11.92 11.92 0 0 0-16.84 0c-4.73 4.73-4.73 12.39 0 17.12l-1.41 4.94 5.05-1.33a11.94 11.94 0 0 0 17.21-17.21zM12 21.92a9.92 9.92 0 0 1-5.36-1.54l-.38-.23-3 0.79.8-2.88-.24-.38a9.92 9.92 0 1 1 8.18 4.24zM16.48 14.25c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12s-.63.8-.77.96c-.14.15-.28.17-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.1-.5.1-.1.23-.28.35-.42.12-.14.16-.25.25-.42.08-.17.04-.32-.02-.45-.08-.12-.55-1.32-.75-1.8-.2-.47-.4-.4-.55-.41-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.32-.22.25-.85.83-.85 2.03 0 1.2.87 2.36.99 2.53.12.17 1.7 2.6 4.12 3.64 2.43 1.04 2.43.69 2.87.64.45-.05 1.46-.6 1.67-1.18.22-.59.22-1.09.15-1.18-.07-.09-.25-.14-.5-.25z"/>
+        </svg>
+        WhatsApp
+      </a> 
+      or email directly at 
+      <a href="mailto:africatechline@gmail.com">africatechline@gmail.com</a>.
+    </p>
+  </section>
+
+
+  <footer class="container fade-section">
+    <p>© 2025 Techline Africa — All Rights Reserved</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="/static/script.js"></script>
+
+</body>
+</html>
